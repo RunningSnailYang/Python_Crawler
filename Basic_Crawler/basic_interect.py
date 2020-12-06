@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 import mechanicalsoup
 
 def getlist_from_baidu(conference):
+    # Get paper list of the conference by searching on Baidu
     search_engine = 'http://www.baidu.com'
     browser = mechanicalsoup.Browser()
     search_page = browser.get(search_engine) # type(search_page): <Reponse [200]>
